@@ -1,7 +1,7 @@
 # AhuStudio 官方网站
 
 ### 本网站由AhuStudio管理并支持
-
+[访问地址](http://ahustudio.logarh.xyz/)
 ---
 
 ## 赞助支持
