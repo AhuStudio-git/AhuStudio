@@ -1,150 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AhuStudio官网</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+  <!-- Replace with your own title and description. -->
+  <title>AhuStudio官网</title>
+  <meta name="description" content="An awesome docsify site for publishing some content on the web.">
+
+  <!-- Default Theme (see https://docsify.js.org/#/themes) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
 </head>
 
-<!-- 主要修改在"已完成的项目"部分 -->
-
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <i class="fas fa-code logo-icon" style="color: #E7E9FD;"></i>
-                <h1>AhuStudio</h1>
-            </div>
-            <p class="tagline">专注于小网站开发，并遵守 MIT 许可证开源</p>
-        </div>
-    </header>
+  <div id="app"></div>
 
-    <div class="container">
-        <section class="dev-projects">
-            <h2 class="section-title">开发中的项目</h2>
-            <div class="projects-grid">
+  <script>
+    // Docsify Configuration (see https://docsify.js.org/#/configuration)
+    window.$docsify = {
+      name: 'AhuStudio官网',
+      repo: 'http://github.com/AhuStudio-git',
+      // Sidebar Configuration
+      auto2top: true,
+      loadSidebar: true,
+      maxLevel: 0,
+      // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
+      subMaxLevel: 3,
 
-                <div class="project-card">
-                    <div class="card-header" href="https://afdian.com/a/ahustudio">
-                        <h3 class="project-name">FoxBook</h3>
-                        <p class="project-type">阅读导航网站</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="project-desc">一站式的导航阅读体验，本网站只提供跳转对应网址，不拥有任何版权</p>
-                        <div class="status-badge status-dev">开发中</div>
+      // Search Plugin Configuration
+      search: {
+        placeholder: 'Type to search',
+        noData: 'No matches found.',
+        // Headline depth, 1 - 6
+        depth: 2,
+      }
+    };
+  </script>
 
-                        <div class="progress-container">
-                            <div class="progress-label">
-                                <span>开发进度</span>
-                                <span>60%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 60%"></div>
-                            </div>
-                        </div>
+  <!-- Required -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
-                        <div class="tech-stack">
-                            <span class="tech-item">HTML/CSS</span>
-                            <span class="tech-item">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
+  <!-- Recommended -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
 
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3 class="project-name">暂定</h3>
-                        <p class="project-type">暂定</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="project-desc">暂定</p>
-                        <div class="status-badge status-dev">开发中</div>
-
-                        <div class="progress-container">
-                            <div class="progress-label">
-                                <span>开发进度</span>
-                                <span>0%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 0%"></div>
-                            </div>
-                        </div>
-
-                        <div class="tech-stack">
-                            <span class="tech-item">HTML/CSS</span>
-                            <span class="tech-item">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div> <!-- 添加projects-grid闭合标签 -->
-        </section> <!-- 添加section闭合标签 -->
-
-        <section class="completed-projects">
-            <h2 class="section-title">已完成的项目</h2>
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3 class="project-name">AhuStudio官网</h3>
-                        <p class="project-type">就是本网站(・ω< )★</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="project-desc">展示我们的内容</p>
-                        <div class="status-badge status-completed">已完成</div>
-
-                        <div class="tech-stack">
-                            <span class="tech-item">HTML/CSS</span>
-                            <span class="tech-item">JavaScript</span>
-                            <span class="tech-item">该项目由AhuStudio管理开发</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div> <!-- 添加projects-grid闭合标签 -->
-        </section> <!-- 添加section闭合标签 -->
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <a href="https://afdian.com/a/ahustudio" class="contact-item">
-                    <i class="fas fa-star"></i>
-                    <span>赞助我们</span>
-                </a>
-                <a href="mailto:ahustudio@163.com" class="contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <span>我们的邮箱</span>
-                </a>
-                <a href="http://github.com/AhuStudio-git" target="_blank" class="contact-item">
-                    <i class="fab fa-github contact-icon"></i>
-                    <span>我们的github</span>
-                </a>
-            </div>
-            <p class="copyright">© 2025 AhuStudio. 保留所有权利。</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.project-card');
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.opacity = "0";
-                    card.style.transform = "translateY(20px)";
-                    card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-
-                    setTimeout(() => {
-                        card.style.opacity = "1";
-                        card.style.transform = "translateY(0)";
-                    }, 100);
-                }, index * 100);
-            });
-        });
-    </script>
 </body>
-
 </html>
